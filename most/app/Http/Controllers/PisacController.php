@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pisac;
+use App\Http\Resources\PisacResurs;
 use Illuminate\Http\Request;
 
 class PisacController extends Controller
@@ -26,7 +26,7 @@ class PisacController extends Controller
             'naziv' => 'required',
         ]);
 
-        $zemlja = \App\Models\Pisac::create($validatedData);
+        $pisac = \App\Models\Pisac::create($validatedData);
 
         return new PisacResurs($pisac);
     }

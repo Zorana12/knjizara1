@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\knjiga;
+use App\Http\Resources\KnjigaResurs;
 use Illuminate\Http\Request;
 
 class KnjigaController extends Controller

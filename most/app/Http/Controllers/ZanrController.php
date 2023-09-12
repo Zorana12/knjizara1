@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Zanr;
+use App\Http\Resources\TipResurs;
 use Illuminate\Http\Request;
 
 class ZanrController extends Controller

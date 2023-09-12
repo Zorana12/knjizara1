@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -30,4 +31,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('/zanr', 'App\Http\Controllers\ZanrController');
     Route::apiResource('/knjige', 'App\Http\Controllers\KnjigaController');
 });
+//Route::get('/users',[UserController::class,'index']);
 
